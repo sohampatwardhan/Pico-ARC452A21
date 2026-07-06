@@ -3,6 +3,8 @@ RP2040-based IoT implementation of a Daikin AC Remote Control using a BMP280 tem
 
 This is a sister project to the [ESP-ARC452A21](https://github.com/sohampatwardhan/ESP-ARC452A21) project, and will be built using CMake.
 
+![Pico Explorer base with Raspberry Pi Pico W](.github/assets/explorerbase_480x480.webp)
+
 ## Hardware
 
 - Raspberry Pi Pico W / RP2040
