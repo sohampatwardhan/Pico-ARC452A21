@@ -1,0 +1,22 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "pico-w-local-toolchain",
+      "displayName": "Pico W with repo-local Arm GNU toolchain",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build-local-toolchain",
+      "cacheVariables": {
+        "PICO_BOARD": "pico_w",
+        "PICO_SDK_PATH": "${sourceDir}/pico-sdk",
+        "PICO_TOOLCHAIN_PATH": "${sourceDir}/toolchains/gcc-arm-embedded-pkg/Payload/bin"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "pico-w-local-toolchain",
+      "configurePreset": "pico-w-local-toolchain"
+    }
+  ]
+}

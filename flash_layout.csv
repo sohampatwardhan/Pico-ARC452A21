@@ -1,0 +1,8 @@
+# Pico-ARC452A21 16 MB flash map.
+# Pico SDK links the firmware into XIP flash from offset 0x00000000.
+# The final 1 MB is reserved for app-owned persistent storage and capture logs.
+name,offset,size,notes
+firmware_xip,0x00000000,0x00F00000,Pico SDK boot2 plus application image
+app_config,0x00F00000,0x00010000,settings and last AC state
+app_state_b,0x00F10000,0x00010000,reserved for future redundant settings/state
+capture_log,0x00F20000,0x000E0000,reserved for future IR capture samples

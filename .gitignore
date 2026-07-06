@@ -1,0 +1,6 @@
+build/
+build-*/
+pico-sdk/
+toolchains/
+.DS_Store
+compile_commands.json
